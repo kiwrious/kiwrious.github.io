@@ -718,3 +718,11 @@ textarea:focus, input:focus{
 		height: 100%;
 	}
 }
+
+table, figure {
+  page-break-inside: avoid;
+}
+
+@page {
+  size: A4;
+}
