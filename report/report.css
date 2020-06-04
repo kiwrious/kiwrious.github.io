@@ -712,3 +712,9 @@ textarea:focus, input:focus{
  right: 2px; bottom: 2px; 
  border-radius: 10px 0 10px 0;
 }
+
+@media print {
+	body, html, #print-wrapper {
+		height: 100%;
+	}
+}
