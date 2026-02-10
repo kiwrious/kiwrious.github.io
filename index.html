@@ -1,1 +1,1365 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"><link rel="icon" href="/favicon.ico"><link rel="manifest" href="/manifest.json"><title>Kiwrious Measure</title><script src="js/libunicorn.out.js"></script><script src="js/libelf-integers.js"></script><script src="js/unicorn-wrapper.js"></script><script src="js/unicorn-constants.js"></script><script src="js/heartrate.js"></script><link href="/css/app.98cdc87a.css" rel="preload" as="style"><link href="/js/app.d42c9adb.js" rel="preload" as="script"><link href="/js/chunk-vendors.d164c1ba.js" rel="preload" as="script"><link href="/css/app.98cdc87a.css" rel="stylesheet"></head><body style="background-color: #314250;"><noscript><strong>We're sorry but kiwrious-measure doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.d164c1ba.js"></script><script src="/js/app.d42c9adb.js"></script></body></html>
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kiwrious</title>
+  <meta name="description" content="Kiwrious empowers kids to explore the world around them and makes scientific inquiry fun. It is a kit of 6 sensors that connect to an online sharing platform.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Kiwrious">
+  <meta property="og:description" content="Kiwrious empowers kids to explore the world around them and makes scientific inquiry fun. It is a kit of 6 sensors that connect to an online sharing platform.">
+  <meta property="og:image" content="https://cdn.auckland.ac.nz/aem/content/auckland/en/news/2020/08/28/lab-in-a-pocket-makes-scientific-inquiry-fun/jcr:content/leftpar/imagecomponent_1520692501/image.img.1024.medium.jpg">
+  <meta property="og:url" content="https://kiwrious.com">
+  <meta property="og:site_name" content="Kiwrious">
+
+
+  <meta name="twitter:title" content="Kiwrious">
+  <meta name="twitter:description" content="Kiwrious empowers kids to explore the world around them and makes scientific inquiry fun. It is a kit of 6 sensors that connect to an online sharing platform.">
+  <meta name="twitter:image" content="https://cdn.auckland.ac.nz/aem/content/auckland/en/news/2020/08/28/lab-in-a-pocket-makes-scientific-inquiry-fun/jcr:content/leftpar/imagecomponent_1520692501/image.img.1024.medium.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Kiwrious">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/boostrap.min.css" />
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/home.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://use.typekit.net/ekz0aha.css"/>
+
+  <!-- Required CSS -->
+  <link href="css/movingboxes.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <link href="css/movingboxes-ie.css" rel="stylesheet" media="screen">
+  <![endif]-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+<!--  <link rel="stylesheet" href="css/hover.min.css"/>-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<div class="preload">
+  <img class="img-fluid" src="img/Kiwrious_logo_gradient_wide_animated.svg">
+</div>
+
+  <!-- Add your site or application content here -->
+  <div class="container-fluid m-0 p-0" style="max-width: 1979px;margin: auto; overflow: hidden;" id="main-content">
+
+
+
+
+    <div class="container-fluid top-header-layer p-0">
+
+      <div class="header-charactor">
+        <div>
+          <img src="img/zally.svg"/>
+        </div>
+        <img class="z_index_99" src="img/zally_hand.svg"/>
+
+      </div>
+
+
+      <div class="container-fluid top-header p-0">
+
+
+
+        <nav class="top-navbar">
+          <a href="/" class="navbar-left">
+            <img class="navbar-logo" src="img/Kiwrious_logo_white_wide.svg" alt="Kiwrious" />
+          </a>
+          <div class="navbar-right">
+
+            <a class="btn btn-outline-light btn-register d-none d-lg-inline-flex" href="/register.html">
+              Register Interest
+            </a>
+
+            <a class="btn btn-link btn-login d-lg-none d-xl-none" href="/register.html">
+              Register
+            </a>
+            <button class="btn btn-link btn-menu d-none d-lg-inline-flex nav-toggler-desktop">
+              <img src="img/menu_icon.svg" alt="Menu" />
+            </button>
+            <button class="btn btn-link btn-menu navbar-toggler d-lg-none" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="img/menu_icon.svg" alt="Menu" />
+            </button>
+          </div>
+
+          <div class="navigation-desktop d-sm-none d-md-none">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Meet Kiwrious</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#contact-us">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#news">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#team">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://kiwrious.medium.com/" target="_blank">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+        <div class="collapse navbar-collapse bg-dark px-3" id="navbarCollapse">
+          <div class="mobile-nav-header">
+            <div>
+              <img src="img/Kiwrious_logo_white_wide.svg" alt="Kiwrious" />
+            </div>
+            <button class="btn btn-link btn-menu  navbar-toggler d-flex justify-content-center align-content-center" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <img class="btn-close" src="img/plus_thin.svg" alt="Menu" />
+            </button>
+          </div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Meet Kiwrious</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register.html">Register Interest</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://kiwrious.medium.com/" target="_blank">Blog</a>
+            </li>
+          </ul>
+          <div class="social">
+
+            <a href="https://www.facebook.com/Kiwrious" target="_blank">
+            </a>
+            <a href="https://twitter.com/kiwrious" target="_blank">
+            </a>
+            <a href="https://instagram.com/kiwrious" target="_blank">
+            </a>
+            <a href="https://www.youtube.com/channel/UCub9PeFM-4-FOD8LzRGACQQ" target="_blank">
+            </a>
+          </div>
+        </div>
+
+        <div class="center-jumbotron">
+          <h1 class="center-jumbotron-header">Inspire Curiosity</h1>
+          <p class="description">Kiwrious believes science is fun, creative and social. We help students experience this firsthand.</p>
+
+          <button class="play-btn hvr-ripple-out" style="visibility: hidden"></button>
+
+        </div>
+
+        <div class="header-graphics">
+          <img src="img/header_sensors.png"/>
+
+        </div>
+
+      </div>
+
+      <div class="header-social">
+        <h5>Connect with us</h5>
+        <div class="links">
+          <a href="https://www.facebook.com/Kiwrious" target="_blank">
+          </a>
+          <a href="https://twitter.com/kiwrious" target="_blank">
+          </a>
+          <a href="https://instagram.com/kiwrious" target="_blank">
+          </a>
+          <a href="https://www.youtube.com/channel/UCub9PeFM-4-FOD8LzRGACQQ" target="_blank">
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="container-fluid px-0 mx-0 middle-content">
+
+      <h2 class="meet-kiwrious mt-5 mb-3">Meet Kiwrious</h2>
+      <p class="meet-kiwrious-extended mb-5 px-sm-4">The Kiwrious Science Experience consists of the Kiwrious Sensor Kit, the Kiwrious Inquiry Editor and the Kiwrious Teacher Resources. It empowers students to engage in scientific inquiries in and out of school.</p>
+
+      <div class="container-fluid row image-box-container mx-0 d-none d-lg-flex">
+        <div class="mb-3 col-sm-6 col-md-6 col-lg-6 col-xl-3 justify-content-lg-end d-lg-flex">
+          <div class="image-box m-xl-auto">
+            <div class="content">
+              <div class="visible-title">
+                <h4>See the invisible</h4>
+                <button class="icon-btn">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+                <p class="invisible-content">
+                  The Kiwrious Science Experience challenges students to make invisible natural phenomena visible. This encourages them to carry out exciting and interesting investigations.
+                </p>
+
+            </div>
+
+
+           </div>
+        </div>
+        <div class="mb-3 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+          <div class="image-box m-xl-auto">
+            <div class="content">
+              <div class="visible-title">
+                <h4>Discover, share and discuss</h4>
+                <button class="icon-btn">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+              <p class="invisible-content">
+                The Kiwrious Inquiry Editor is an online based learning platform, aligned with the science capabilities of the New Zealand science curriculum. It focuses on encouraging students to make multiple observations, represent findings in creative ways and discuss them with their peers.
+              </p>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="mb-3 col-sm-6 col-md-6 col-lg-6 col-xl-3 justify-content-lg-end d-lg-flex">
+          <div class="image-box m-xl-auto">
+            <div class="content">
+              <div class="visible-title">
+                <h4>Supporting teachers</h4>
+                <button class="icon-btn">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+              <p class="invisible-content">
+                The Kiwrious Sensor Kit is the first integrated science learning tool to be designed in New Zealand and aligned with levels four and five of the national science curriculum to ensure students learning requirements are met.
+              </p>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="mb-3 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+          <div class="image-box m-xl-auto">
+            <div class="content">
+              <div class="visible-title">
+                <h4>Inspiring fearless problem solvers</h4>
+                <button class="icon-btn">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+              <p class="invisible-content">
+                Kiwrious aims to help reduce the digital divide, to have a direct impact on the future of science in New Zealand by assisting in the development of the next generation of critical thinkers and innovators.
+              </p>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper image-box-container-mobile container-fluid mx-0 px-0 d-lg-none">
+
+          <div class="swiper-slide image-box">
+            <div class="content">
+              <div class="image">
+                <img class="img-fluid" src="img/kiwrious.jpg" />
+              </div>
+
+              <h4>See the invisible</h4>
+              <p>
+                The Kiwrious Science Experience challenges students to make invisible natural phenomena visible. This encourages them to carry out exciting and interesting investigations.
+              </p>
+            </div>
+
+          </div>
+          <div class="swiper-slide image-box">
+            <div class="content">
+              <div class="image">
+                <img style="height: 100%;" src="img/20151126_NZStory_Furnwear_Room_096.jpg" />
+              </div>
+              <h4>Discover, share and discuss</h4>
+              <p class="invisible-content">
+                The Kiwrious Inquiry Editor is an online based learning platform, aligned with the science capabilities of the New Zealand science curriculum. It focuses on encouraging students to make multiple observations, represent findings in creative ways and discuss them with their peers.
+              </p>
+
+            </div>
+
+
+          </div>
+          <div class="swiper-slide image-box">
+            <div class="content">
+              <div class="image">
+                <img  style="min-height: 100%; width: 100%;padding-top: 60px;" src="img/supporting_teachers.jpg" />
+              </div>
+              <h4>Supporting teachers</h4>
+              <p class="invisible-content">
+                The Kiwrious Sensor Kit is the first integrated science learning tool to be designed in New Zealand and aligned with levels four and five of the national science curriculum to ensure students learning requirements are met.
+              </p>
+
+            </div>
+
+          </div>
+          <div class="swiper-slide image-box">
+            <div class="content">
+              <div class="image">
+                <img class="img-fluid" src="img/inspiring_fearless_thumb.JPG" />
+              </div>
+              <h4>Inspiring fearless problem solvers</h4>
+              <p class="invisible-content">
+                Kiwrious aims to help reduce the digital divide, to have a direct impact on the future of science in New Zealand by assisting in the development of the next generation of critical thinkers and innovators.
+              </p>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="row m-0 how-it-works">
+        <div class="col-lg- 4 d-flex justify-content-center align-items-start">
+          <p class="vertical-text">
+            How it works
+          </p>
+
+          <div class="vertical-description">
+            <p>
+              The Kiwrious Sensor Kit comes with 6 different sensors that help measure different scientific phenomena. The accompanying lesson plans and supplementary learning materials are aligned with the New Zealand curriculum and support teachers in introducing their students to the Kiwrious sensors and the Inquiry Editor
+            </p>
+            <a href="register.html" class="btn btn-link request-sensor-kit-btn">
+              Request a sensor kit
+            </a>
+          </div>
+
+        </div>
+        <div class="offset-6"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid row mx-0 px-0 sensors-kit">
+      <h2 class="mt-5 mb-5">The Kiwrious Sensor Kit </h2>
+      <div class="content">
+        <div class="swiper-container-hexagons">
+          <div class="hexagons-mobile d-lg-none swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hex-image meter-blue">
+                <img src="img/red_hexagon.svg" />
+                <img class="middle" src="img/graphics/temperature_sensor.png" />
+              </div>
+              <h2 style="color: #D90033;">Temperature</h2>
+              <p class="description">Measures surface temperature</p>
+              <p class="units">UNITS</p>
+              <p class="units-content">Celsius</p>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="hex-image circuit-z-blue">
+                <img src="img/yellow_hexagon.svg" />
+                <img class="middle" src="img/graphics/conductivity_sensor.png" />
+              </div>
+
+              <h2 style="color:#FEB826;">Conductance</h2>
+              <p class="description">Measures conductivity of objects</p>
+              <p class="units">UNITS</p>
+              <p class="units-content">Siemens</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="hex-image heart">
+                <img src="img/pink_hexagon.svg" />
+                <img class="middle" src="img/graphics/heartrate_sensor.png" />
+              </div>
+
+              <h2 style="color: #FF006E;">Heart Rate</h2>
+              <p class="description">Measures heart rate in a safe and non-invasive way</p>
+              <p class="units">UNITS</p>
+              <p class="units-content">beats per minute</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="hex-image circuit-green">
+                <img src="img/green_hexagon.svg" />
+                <img class="middle" src="img/graphics/air_sensor.png" />
+              </div>
+              <h2 style="color: #00D36A;">Air quality</h2>
+              <p class="description">Measures volatile organic compounds in the air</p>
+              <p class="units">UNITS</p>
+              <p class="units-content">parts per billion</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="hex-image oval-blue">
+                <img src="img/light_blue_hexagon.svg" />
+                <img class="middle" src="img/graphics/humidity_sensor.png" />
+              </div>
+              <h2 style="color: #3BA4FF;">Humidity</h2>
+              <p class="description">Measures relative humidity and air temperature</p>
+              <p class="units">UNITS</p>
+              <p class="units-content">% ; Celsius</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="hex-image circuit-blue">
+                <img src="img/purple_hexagon.svg" />
+                <img class="middle" src="img/graphics/uv_sensor.png" />
+              </div>
+
+              <h2>UV & Light</h2>
+              <p class="description">Measures the amount of light and ultraviolet radiation</p>
+              <p class="units">UNITS</p>
+              <p class="units-content">Lux; UV index</p>
+            </div>
+
+          </div>
+          <!--        <div class="swiper-pagination"></div>-->
+
+          <!-- If we need navigation buttons -->
+          <!--        <div class="swiper-button-prev"></div>-->
+          <!--        <div class="swiper-button-next"></div>-->
+
+          <!-- If we need scrollbar -->
+          <!--        <div class="swiper-scrollbar"></div>-->
+        </div>
+
+        <div class="hexagon-wrapper flip-card-container">
+          <div class="hexagons hexagons-one d-none d-lg-flex">
+            <div class="hexagon-flip-card-container">
+              <div class="hexagon-flip-card">
+                <div class="hexagon-flip-card-front">
+                  <img src="img/graphics/temperature_sensor.png" />
+                </div>
+                <div class="hexagon-flip-card-back">
+                  <div class="hex-content">
+                    <h2>Temperature</h2>
+                    <p class="description">Measures surface temperature</p>
+                    <p class="unit">UNITS</p>
+                    <p class="units-content">Celsius</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="hexagon-flip-card-container">
+              <div class="hexagon-flip-card">
+                <div class="hexagon-flip-card-front">
+                  <img src="img/graphics/conductivity_sensor.png" />
+                </div>
+                <div class="hexagon-flip-card-back">
+                  <div class="hex-content">
+                    <h2>Conductance</h2>
+                    <p class="description">Measures conductivity of objects</p>
+                    <p class="unit">UNITS</p>
+                    <p class="units-content">Siemens</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="hexagon-flip-card-container">
+              <div class="hexagon-flip-card">
+                <div class="hexagon-flip-card-front">
+                  <img src="img/graphics/heartrate_sensor.png" />
+                </div>
+                <div class="hexagon-flip-card-back">
+                  <div class="hex-content">
+                    <h2>Heart Rate</h2>
+                    <p class="description">Measures heart rate in a safe and non-invasive way</p>
+                    <p class="unit">UNITS</p>
+                    <p class="units-content">beats per minute</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="hexagons hexagons-two d-none d-lg-flex">
+            
+
+            <div class="hexagon-flip-card-container">
+              <div class="hexagon-flip-card">
+                <div class="hexagon-flip-card-front">
+                  <img src="img/graphics/air_sensor.png" />
+                </div>
+                <div class="hexagon-flip-card-back">
+                  <div class="hex-content">
+                    <h2>Air quality</h2>
+                    <p class="description">Measures volatile organic compounds in the air</p>
+                    <p class="unit">UNITS</p>
+                    <p class="units-content">parts per billion</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hexagon-flip-card-container">
+              <div class="hexagon-flip-card">
+                <div class="hexagon-flip-card-front">
+                  <img src="img/graphics/humidity_sensor.png" />
+                </div>
+                <div class="hexagon-flip-card-back">
+                  <div class="hex-content">
+                    <h2>Humidity</h2>
+                    <p class="description">Measures relative humidity and air temperature</p>
+                    <p class="unit">UNITS</p>
+                    <p class="units-content">% ; Celsius</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="hexagon-flip-card-container">
+              <div class="hexagon-flip-card">
+                <div class="hexagon-flip-card-front">
+                  <img src="img/graphics/uv_sensor.png" />
+                </div>
+                <div class="hexagon-flip-card-back">
+                  <div class="hex-content">
+                    <h2>UV & Light</h2>
+                    <p class="description">Measures the amount of light and ultraviolet radiation</p>
+                    <p class="unit">UNITS</p>
+                    <p class="units-content">Lux; UV index</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="video-thumb" style="overflow: hidden">
+          <div class="thumb-overlay"></div>
+          <div class="video" style="border-radius: 10px;">
+            <video style="max-width: 100%;border-radius: 10px;" id="video-sensors">
+              <source src="video/using_the_sensors.mp4" type="video/mp4">
+            </video>
+          </div>
+<!--          <div class="thumb-overlay"></div>-->
+
+          <button class="play-btn hvr-ripple-out white"></button>
+          <p class="play-btn-label">Using the Sensors</p>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="container-fluid row mx-0 px-0 sologan">
+
+      <div class="sologan-text">
+        <h2> Explore </h2>
+        <img class="wavy-line" src="img/wavy_line.svg"/>
+        <h2> Collaborate </h2>
+        <img class="wavy-line" src="img/wavy_line.svg"/>
+        <h2> Learn </h2>
+      </div>
+
+
+      <div class="container-fluid row mx-0 px-0 discover-together">
+        <div class="col-md-6 background">
+          <img class="img-fluid" src="img/discover_together_bg.png"/>
+        </div>
+        <div class="col-md-6 text">
+          <h2>The Kiwrious Inquiry Editor</h2>
+          <p>The Kiwrious Inquiry Editor was designed for students to formulate scientific inquiries, make multiple observations, represent their findings in creative ways and discuss these findings.</p>
+
+            <p>At Kiwrious we recognise that science is empirical and involves testing ideas and gathering relevant data. We strongly believe that emerging scientists need to work together and share their ideas to thrive.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid mx-auto text-center flow-chart">
+      <img class="img-fluid d-none d-md-flex" src="img/process.png" alt="Process" style="max-width: 1330px;">
+      <img class="img-fluid d-md-none d-lg-none d-xl-none" src="img/process_mobile.png" style="max-width: 320px;" alt="Process">
+    </div>
+
+    <div class="container-fluid mx-0 px-0 resources">
+      <div class="left-books">
+        <img class="img-fluid" src="img/left_books.png" alt="Left Books"/>
+      </div>
+      <div class="text">
+        <h2>The Kiwrious Teacher Resources</h2>
+        <p class="mb-1">Resources designed by teachers, for teachers</p>
+        <p class="mb-1">Each Kiwrious sensor comes with a lesson plan and challenges to familiarise students and teachers with the functionality of the sensor. Students are then invited to conduct their own experiments using the Kiwrious Inquiry Editor.
+        </p>
+
+        <div class="btn-container">
+        </div>
+
+
+      </div>
+
+      <div class="right-books">
+        <img class="img-fluid" src="img/right_books.png" alt="Right Books"/>
+      </div>
+
+    </div>
+
+    <div class="grid-wrap mb-4 mt-5">
+      <h2>Impact</h2>
+      <div class="grid-container row">
+
+        <div class="col-md-4 grid-image">
+          <div class="grid-thumb">
+            <img class="img-fluid" src="img/schools.jpg"/>
+          </div>
+
+          <h3>Schools</h3>
+          <p class="mb-1">
+            The Kiwrious Science Experience is the first “Kiwi made” science learning tool of its kind in New Zealand.
+          </p>
+          <p class="mt-0">
+            The additional teaching material and resources enable teachers to support the New Zealand science curriculum.
+          </p>
+        </div>
+        <div class="col-md-4 grid-image">
+          <div class="grid-thumb">
+            <img class="img-fluid" src="img/students.jpg" />
+          </div>
+          <h3>Students</h3>
+          <p>The Kiwrious Inquiry Editor provides students a unique opportunity to explore science, expand their curiosity and enhance their awareness of their environment. By collaborating with their peers and other schools, students broaden their learning horizon and expand their inquiring minds across New Zealand.</p>
+        </div>
+        <div class="col-md-4 grid-image">
+          <div class="grid-thumb">
+            <img class="img-fluid" src="img/wider_community.JPG" />
+          </div>
+          <h3>Wider Community</h3>
+          <p>The Kiwrious Science Experience enable students and teachers to engage with their local community on local issues such as; climate change, water purity and/or air quality. These interactions encourage students to develop a love of science and become the innovators of the future.</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="download-brochure">
+      <a class="btn register-interest ripple" href="register.html">
+        Register your interest
+      </a>
+
+    </div>
+
+    <div class="text-slider">
+
+      <div class="text-slider-image d-none d-md-flex">
+        <img src="img/whiteborad_learning.JPG" />
+      </div>
+      <div class="text-slider-content">
+
+        <h2 class="title">
+            Hear it from them
+        </h2>
+        <div class="text-slider-image d-sm-flex d-flex d-md-none d-lg-none d-xl-none justify-content-center">
+          <img src="img/whiteborad_learning.JPG" />
+        </div>
+        <div style="max-width: 748px;">
+          <div class="content text-slider-wrap">
+            <div class="slider-content">
+              <p class="description">“A very fun experiment, that was easy to use, and provided facts and answers you may not know about UV”</p>
+              <p class="author">Student  –  King’s School, Auckland</p>
+            </div>
+
+            <div class="slider-content">
+              <p class="description">“I liked how we could experiment with different materials and collaborate with friends”</p>
+              <p class="author">Student - Panmure Bridge school, Auckland</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="schools">
+      <h3>Schools who helped us along the way</h3>
+
+      <div class="school-wrapper">
+        <div class="school-boxes swiper-wrapper">
+          <div class="color_ffffff baradene-logo swiper-slide">
+            <img src="img/schools/baradene_logo.png"/>
+          </div>
+          <div class="color_aa1e20 panmure-bridge-logo swiper-slide">
+            <img src="img/schools/panmure_bridge_logo.png"/>
+          </div>
+          <div class="color_fafafa kings-logo swiper-slide">
+            <img src="img/schools/kings_logo.png"/>
+          </div>
+
+          <div class="color_fafafa mangawahi-beach-logo swiper-slide">
+            <img src="img/schools/mangawahi_beach.png"/>
+          </div>
+          <div class="color_161d4a eggs-logo swiper-slide">
+            <img src="img/schools/eggs_logo.png"/>
+          </div>
+          <div class="color_f8f8f8 mags-logo swiper-slide">
+            <img src="img/schools/mags_logo.png"/>
+          </div>
+          <div class="color_823240 flax-lux-logo swiper-slide">
+            <img src="img/schools/flat_lux_logo.png"/>
+          </div>
+          <div class="color_gradient join-btn swiper-slide">
+            <a class="btn btn-link" href="register.html">
+              Join Us
+            </a>
+          </div>
+
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="d-none d-lg-flex swiper-button-prev"></div>
+        <div class="d-none d-lg-flex swiper-button-next"></div>
+
+      </div>
+
+    </div>
+
+    <div class="supporters">
+      <h3>Friends and supporters of Kiwrious</h3>
+      <div class="supporters-img">
+        <div>
+          <img alt="Auckland University" src="img/brands/uoa@2x.png"/>
+        </div>
+        <div>
+          <img alt="SCAD" src="img/brands/ESW-SCP-VC-RGB@2x.png"/>
+        </div>
+        <div>
+          <img alt="ABI" src="img/brands/ABI_logo.png"/>
+        </div>
+        <div>
+          <img alt="ABI" src="img/brands/CIE_logo.png"/>
+        </div>
+      </div>
+
+      <div class="supporters-img mt-1">
+
+        <div>
+          <img alt="Curious Minds" src="img/brands/logo-x2@2x.png"/>
+        </div>
+
+        <div>
+          <img class="p-4" alt="ABI" src="img/brands/MERW_logo.jpg"/>
+        </div>
+        <div>
+          <img class="p-1"  alt="AHLAB" src="img/brands/AHLab_Logo.png"/>
+        </div>
+        <div>
+          <img class="p-1"  alt="AHLAB" src="img/brands/cloud_9.png"/>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="support" id="support">
+      <h2>Support Us</h2>
+      <p>Kiwrious Limited is a not-for-profit company with charitable status.</p>
+      <p>Kiwrious is seeking partnerships with corporate sponsors and philanthropic donors to distribute 100 Kiwrious Sensor Kits per school across New Zealand, as well as a free individual Sensor Kits to students interested in continuing their science inquiry journey out of school.</p>
+      <p>Get in touch to learn more on how you can support us.</p>
+
+      <button class="btn register-interest mt-5 ripple" data-toggle="modal" data-target="#contact-us">
+        Contact Us
+      </button>
+    </div>
+
+    <div class="news" id="news">
+      <div class="header">
+        <h3>Latest News</h3>
+      </div>
+
+      <div class="news-swiper">
+        <div class="news-grid swiper-wrapper">
+          
+<!--     start of slide item       -->
+          <div class="news-item swiper-slide">
+            <div class="thumb">
+              <img src="https://miro.medium.com/max/1161/1*495IkBR1B0I5f8ZE8M8dlA.jpeg"/>
+            </div>
+
+            <p>28 Jan 2021</p>
+            <div class="title">
+              <a href="https://kiwrious.medium.com/super-kiwrious-users-on-a-space-mission-9cb8a7f47e08">
+                ‘Super Kiwrious’ Users on a Space Mission…
+              </a>
+            </div>
+
+          </div>
+<!--     end of slide item       -->
+          
+<!--     start of slide item       -->
+          <div class="news-item swiper-slide">
+            <div class="thumb">
+              <img src="https://cdn.auckland.ac.nz/aem/content/auckland/en/news/2020/10/29/serious-scientific-fun-a-winner-at-velocity/jcr:content/leftpar/imagecomponent/image.img.1024.medium.jpg/1603928232130.jpg"/>
+            </div>
+
+            <p>29th October 2020</p>
+            <div class="title">
+              <a href="https://www.auckland.ac.nz/en/news/2020/10/29/serious-scientific-fun-a-winner-at-velocity.html">Serious scientific fun a winner at Velocity</a>
+            </div>
+
+          </div>
+<!--     end of slide item       -->
+
+          <div class="news-item swiper-slide">
+
+            <iframe id="player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="thumb" style="max-height: 295px; height: 295px; width: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/3rNzoGGSkbQ?enablejsapi=1">
+            </iframe>
+            <p>12 September 2020</p>
+            <div class="title">
+              <a href="https://youtu.be/3rNzoGGSkbQ">The Kiwrious journey: A Nation of Curious Mind funded project to inspire intermediate and junior high school students into science</a>
+            </div>
+
+          </div>
+          <div class="news-item swiper-slide">
+            <div class="thumb">
+              <img src="https://cdn.auckland.ac.nz/aem/content/auckland/en/news/2020/08/28/lab-in-a-pocket-makes-scientific-inquiry-fun/jcr:content/leftpar/imagecomponent_1520692501/image.img.1024.medium.jpg/1598434819671.png"/>
+            </div>
+
+            <p>30th August 2020</p>
+            <div class="title">
+              <a href="https://www.auckland.ac.nz/en/news/2020/08/28/lab-in-a-pocket-makes-scientific-inquiry-fun.html">‘Lab in a pocket’ awakens young minds to the world around them, making scientific inquiry fun</a>
+            </div>
+
+          </div>
+
+          <div class="news-item swiper-slide">
+            <div class="thumb">
+              <img src="img/news/news_2020_jun_10.jpg"/>
+            </div>
+            <p>10 June 2020</p>
+            <div class="title">
+              <a href="#">Visiting Kowhai Intermediate with our first prototype of the UV sensor</a>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    <div class="blog-btn-holder">
+        <a href="https://kiwrious.medium.com/" class="btn btn-link read-our-blog-btn" target="_blank">
+            Read Our Blog
+        </a>
+    </div>
+
+    </div>
+
+    <div class="footer">
+      <div class="top" id="team">
+        <h2>Our Team</h2>
+        <p>Kiwrious has been established by a multidisciplinary team at the University of Auckland headed by Associate Professor Suranga Nanayakkara from the Auckland Bioengineering Institute and Associate Professor Dawn Garbett from the Faculty of Education. Both of whom are world leaders in their respective fields.</p>
+
+        <div class="avatar-container row mx-0 px-0 mt-5">
+          <div class="avatar-block col-md-4">
+            <div class="avatar-thumb" data-toggle="modal" data-target="#suranga">
+              <img src="img/avatars/suranga.png" alt="Suranga" />
+              <img class="plus-icon" src="img/plus.svg" alt="Suranga" />
+            </div>
+            <h6>Suranga Nanayanakkara</h6>
+            <p>Founder</p>
+            <div class="social">
+              <a href="#">
+                <img src="img/icon_linkedin.svg"/>
+              </a>
+            </div>
+          </div>
+          <div class="avatar-block col-md-4">
+            <div class="avatar-thumb" data-toggle="modal" data-target="#dawn">
+              <img src="img/avatars/dawn.png" alt="Dawn" />
+              <img class="plus-icon" src="img/plus.svg" alt="Dawn" />
+            </div>
+            <h6>Dawn Garbett</h6>
+            <p>Education Leader</p>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/dawn-garbett-a71a231b/" target="_blank">
+                <img src="img/icon_linkedin.svg" />
+              </a>
+            </div>
+          </div>
+          <div class="avatar-block col-md-4">
+            <div class="avatar-thumb" data-toggle="modal" data-target="#sonia">
+              <img src="img/avatars/sonia.png" alt="Sonia" />
+              <img class="plus-icon" src="img/plus.svg" alt="Sonia" />
+            </div>
+            <h6>Sonia Dupuch</h6>
+            <p>Business Development</p>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/sonia-dupuch" target="_blank">
+                <img src="img/icon_linkedin.svg"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle">
+        <img class="footer_combined_circuit d-none d-lg-flex" src="img/graphics/Footer_Left.png"/>
+        <img class="footer_combined_circuit_right d-none d-lg-flex" src="img/graphics/Footer_Right.png"/>
+        <a class="btn btn-outline-light meet-team-btn" href="/team.html">
+          Meet our team
+        </a>
+
+
+        <div class="subscribe-form" id="mc_embed_signup">
+          <h2>Subscribe for the latest news</h2>
+          <form action="https://Kiwrious.us17.list-manage.com/subscribe/post?u=fc1fff1af91e59f092c8e82ac&amp;id=e13fb13097" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate register-form" target="_blank" novalidatedate>
+            <div class="form-group row px-0 mx-0">
+              <div class="col-sm-12 col-md-6">
+                  <input type="text" class="form-control" placeholder="First Name" name="FNAME" id="mce-FNAME"/>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Last Name" name="LNAME" id="mce-LNAME"/>
+              </div>
+              <div class="col-sm-12 col-md-12">
+                <input type="text" class="form-control full-width" placeholder="Enter your email" name="EMAIL" id="mce-EMAIL"/>
+              </div>
+
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+
+              <input class="d-none" type="text" name="b_fc1fff1af91e59f092c8e82ac_e13fb13097" tabindex="-1" value=""/>
+              <div class="col-12">
+                <button type="submit" class="btn ripple" id="mc-embedded-subscribe">
+                  Sign me Up
+                </button>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+      <div class="bottom">
+
+        <div class="content">
+          <a href="/" class="logo">
+            <img class="navbar-logo" src="img/Kiwrious_logo_white_wide.svg" alt="Kiwrious" />
+          </a>
+          <div class="links">
+            <a href="register.html">Register your interest</a>
+            <a href="/#news">News</a>
+            <a href="/#team">Our Team</a>
+            <a href="/#support">Support Us</a>
+          </div>
+          <div class="social">
+
+            <a href="https://www.facebook.com/Kiwrious" target="_blank">
+            </a>
+            <a href="https://twitter.com/kiwrious" target="_blank">
+            </a>
+            <a href="https://instagram.com/kiwrious" target="_blank">
+            </a>
+            <a href="https://www.youtube.com/channel/UCub9PeFM-4-FOD8LzRGACQQ" target="_blank">
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>2021 &copy; Kiwrious Ltd.</p>
+          <a class="btn" id="privacyBtn" data-toggle="modal" data-target="#privacy-policy" href="#privacy-policy">Privacy Policy</a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+<!--  Modals -->
+
+  <div class="modal fade team-modal" id="suranga" tabindex="-1" role="dialog" aria-labelledby="surangaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 header mx-0 px-0">
+                <button class="btn btn-link" type="button" data-toggle="modal" data-target="#suranga">
+                  <img src="img/plus.svg" />
+                </button>
+              </div>
+              <div class="col-sm-12 col-md-4 mb-sm-2 avatar">
+                <img class="img-fluid" src="img/avatars/suranga.png" alt="Suranga" />
+              </div>
+              <div class="col-md-8">
+                <h4 class="name">Suranga Nanayanakkara</h4>
+                <p class="profession">Founder</p>
+                <div class="social">
+                  <a href="#">
+                    <img src="img/icon_linkedin.svg" />
+                  </a>
+                </div>
+                <div class="content">
+                  <p>
+                    Associate Professor Suranga Nanayanakkara founded the "Augmented Human Lab" to explore ways of creating ‘enabling’ human-computer interfaces as natural extensions of our body, mind and behaviour. His experience in running a national science experiment project in Singapore and conducting design thinking workshops are directly relevant to the Kiwrious project. Suranga has drawn together a team of experts who share his vision to create a truly innovative and exciting project that will revolutionise the way young students engage with science. He is undoubtedly the driving force and mastermind.
+
+                  </p>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade team-modal" id="dawn" tabindex="-1" role="dialog" aria-labelledby="dawnModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 header mx-0 px-0">
+                <button class="btn btn-link" type="button" data-toggle="modal" data-target="#dawn">
+                  <img src="img/plus.svg" />
+                </button>
+              </div>
+              <div class="col-sm-12 col-md-4 mb-sm-2 avatar">
+                <img class="img-fluid" src="img/avatars/dawn.png" alt="Dawn" />
+              </div>
+              <div class="col-md-8">
+                <h4 class="name">Dawn Garbett</h4>
+                <p class="profession">Educational Leader</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/dawn-garbett-a71a231b/" target="_blank">
+                    <img src="img/icon_linkedin.svg" />
+                  </a>
+                </div>
+                <div class="content">
+                  <p>
+                    Associate Professor Dawn Garbett is a teacher educator in the Faculty of Education and Social Work and honorary Queen of Kiwrious. She is passionate about making science relevant and authentic for all students. Kiwrious grabbed her attention from its inception. She has supported the development of resources and challenges on the Inquiry Editor. With this tool kit, students can investigate and inquire about questions that intrigue, concern, amaze and inspire them. Arise, creative scientists!
+
+                  </p>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade team-modal" id="sonia" tabindex="-1" role="dialog" aria-labelledby="soniaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 header mx-0 px-0">
+                <button class="btn btn-link" type="button" data-toggle="modal" data-target="#sonia">
+                  <img src="img/plus.svg" />
+                </button>
+              </div>
+              <div class="col-sm-12 col-md-4 mb-sm-2 avatar">
+                <img class="img-fluid" src="img/avatars/sonia.png" alt="Sonia" />
+              </div>
+              <div class="col-md-8">
+                <h4 class="name">Sonia Dupuch</h4>
+                <p class="profession">Business Development</p>
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/sonia-dupuch" target="_blank">
+                    <img src="img/icon_linkedin.svg"/>
+                  </a>
+                </div>
+                <div class="content">
+                  <p>
+                    Sonia completed her Master of Engineering in Telecommunication Systems from ESIEE-Paris. She worked in five different countries for diverse international companies and spent 10 years in Silicon Valley, California working on inspiring projects in the semiconductor and consumer electronic field. Even though she was surrounded by innovation and technology for all those years, she has returned to New Zealand to share her passion for Science and to introduce all the exciting facets of the STEAM fields to young and curious minds. She founded the TestPod Ltd in 2014 and joined AHLAB in 2020 to be part of the Kiwrious project.
+
+                  </p>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--  Contact Us Form -->
+
+  <div class="modal fade contact-us-modal show" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 header mx-0 px-0">
+                <h4>Contact Us</h4>
+                <button class="btn btn-link" type="button" data-toggle="modal" data-target="#contact-us">
+                  <img src="img/plus.svg" />
+                </button>
+              </div>
+              <form class="contact-form">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <input class="form-control" placeholder="Your Name *" name="name">
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <input class="form-control" placeholder="Email Address *" name="email">
+                  </div>
+
+                  <div class="col-sm-12 col-md-12">
+                    <textarea rows="5" class="form-control" placeholder="Message *" name="message"></textarea>
+                  </div>
+
+                  <div class="col-sm-12 col-md-12">
+                    <button class="btn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  Privacy Policy Modal -->
+
+  <div class="modal fade privacy-policy-modal show" id="privacy-policy" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 header mx-0 px-0">
+                <h4>Kiwrious - Privacy Policy</h4>
+                <button class="btn btn-link" type="button" data-toggle="modal" data-target="#privacy-policy">
+                  <img src="img/plus.svg" />
+                </button>
+              </div>
+              <div class="container-fluid content">
+                <p>This Privacy Policy governs the use of personal information by Kiwrious Limited <b>(Kiwrious)</b>.</p>
+                <div class="row">
+                  <div class="col-12">
+                    <h5>Your privacy rights</h5>
+                    <ol>
+                      <li>Kiwrious is committed to complying with its obligations under the Privacy Act 1993, and from 1 December 2020, the Privacy Act 2020 (as relevant, the <b>Privacy Act</b>) when dealing with your personal information. Any personal information you provide to us will be stored, used and disclosed by Kiwrious in accordance with this Privacy Policy.  </li>
+                      <li>This Privacy Policy should be read in conjunction with any applicable terms and conditions relating to the use of and access to our websites, <a href="https://www.kiwrious.com">www.kiwrious.com</a> or learn.kiwrious.com, and other products or services (collectively, <b>Services</b>).</li>
+                      <li>If you have any questions regarding this Privacy Policy or wish to access or amend the personal information that we hold about you please contact us at hello@kiwrious.com</li>
+                    </ol>
+                  </div>
+
+                  <div class="col-12">
+                    <h5>Acceptance of this privacy policy</h5>
+                    <ol start="4">
+                      <li>You acknowledge that you have read and understood this Privacy Policy, and consent to the collection, use, disclosure, storage and retention of your personal information as described in this Privacy Policy when you access or use our Services, or otherwise provide us with any personal information. </li>
+                   </ol>
+                  </div>
+                  <div class="col-12">
+                    <h5>Amendments to this privacy policy</h5>
+                    <ol start="5">
+                      <li>We may amend and update this Privacy Policy from time to time by posting a revised version on our website.  Any changes will apply from the date we post the updated Privacy Policy on the website. If we make any significant changes, we will provide you with reasonable notice of such changes through the website, or via other means such as email. By using our Services after such notice period, you will be deemed to have accepted the updates to this Privacy Policy.  If you do not agree to any change, you must stop using and/or accessing our Services.</li>
+                    </ol>
+                  </div>
+                  <div class="col-12">
+                    <h5>How we collect information about you</h5>
+                    <ol start="6">
+                      <li>Your personal information will be collected and held by Kiwrious Limited, Auckland Bioengineering Institute, Cloud 9, 70 Symonds Street, Auckland, New Zealand 1010. </li>
+                      <li>The type of personal information that we collect will depend on the purpose for which it is collected, but may include:
+                        <ol type="a">
+                          <li>name and contact details (including your email address, phone number and postal address);</li>
+                          <li>if you are a student, your name, email address and details of the school you attend;</li>
+                          <li>if you are a student, your name, email address and details of the school you attend;</li>
+                          <li>if you are a teacher or educator, your name, email address and details of the school where you are employed;</li>
+                          <li>payment details and transaction history; and</li>
+                          <li>any other information you may provide to us when you provide us with feedback or respond to our surveys.</li>
+                        </ol>
+                      </li>
+                      <li>
+                        We may collect Personal Information about you when:
+                        <ol type="a">
+                          <li>you access our websites, www.kiwrious.com and learning platform, learn.kiwrious.com;</li>
+                          <li>you subscribe to any newsletter or publication of Kiwrious or enquire to learn more about our kits, upcoming training workshops and webinars; </li>
+                          <li>you register a Kiwrious account through our website;</li>
+                          <li>you purchase one of our kits;</li>
+                          <li>you complete surveys, other research or provide details to us in any feedback or contact us form;</li>
+                          <li>enter competitions or register for promotions;</li>
+                          <li>you otherwise contact us through social media, email, telephone or other means;</li>
+                          <li>you apply for employment position with us; or</li>
+                          <li>we are required to do so by law.</li>
+                        </ol>
+                      </li>
+                      <li>
+                        When you use our website we may collect information that is sent to us by your computer, mobile device or other access device.  The information that is sent to us may include your computer IP address, referral URL, geo-location and data about the webpages that you access. Generally this information is not personally identifiable data, but to the extent that it is considered personal information for the purposes of any applicable law or regulation, we will comply with our obligations under any such law or regulation when processing that information.
+                      </li>
+                      <li>If you choose not to provide personal information to us on request, we may be unable to provide certain Services to you, or it may affect the quality of those Services </li>
+                    </ol>
+                  </div>
+                  <div class="col-12">
+                    <h5>How we use and disclose information that we collect about you</h5>
+                    <ol start="11">
+                      <li>We will only use and disclose your personal information in accordance with your authorisation and/or for the purposes set out in this Privacy Policy, which shall include:
+                        <ol type="a">
+                          <li>to provide you with access to and use of our Services;</li>
+                          <li>to communicate with you (for example to provide customer support or to ask you for feedback about our Services);</li>
+                          <li>to facilitate your use of our Services and help provide a more personalised experience; </li>
+                          <li>to facilitate, develop, run and improve the Kiwrious Science Experience which includes our Inquiry Editor and Sensor kit, webinars, workshops, and competitions operated by Kiwrious; </li>
+                        <li>to research and help improve and enhance our Services; </li>
+                          <li>to undertake administrative functions associated with our business;</li>
+                          <li>to conduct market analysis and perform data analytics on customer behaviour and insights in relation to our Services; </li>
+                          <li>to comply with any legal obligations or as otherwise permitted by the Privacy Act; and</li>
+                          <li>subject to you providing your consent (in accordance with the Unsolicited Electronic Messages Act 2007), sending you electronic messages to promote and market our Services.</li>
+                        </ol>
+                      </li>
+                      <li>
+                        Where you consent to us using your personal information for marketing and promotional communications, you can opt out at any time by notifying us at hello@kiwrious.com or by clicking the unsubscribe function included in our marketing communications.
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-12">
+                    <h5 class="ml-5">Who we may disclose your personal information to</h5>
+                    <ol start="13">
+                      <li>We may disclose your personal information to:
+                      <ol type="a">
+                        <li>any service providers that we have engaged to provide a service to us in relation to our Services.  For example, we may engage third parties to provide us with IT, marketing or customer support services;</li>
+                        <li>our professional advisors, including accountants, insurers and lawyers;</li>
+                        <li>any other person or organisation that you have authorised us to disclose your information to; and/or</li>
+                        <li>any other third party where such disclosure is permitted under the Privacy Act and/or any other applicable law. </li>
+
+                      </ol>
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-12">
+                    <h5 class="ml-4">Access, correction and retention of your personal information</h5>
+                    <ol start="14">
+                      <li>You agree that any information you give to us will be accurate, correct and up to date. You must inform us if any of your personal information changes, to ensure that the details we hold about you are up to date and correct. </li>
+                    <li>You are entitled to access the personal information we hold about you, and to request that we amend it if it is incorrect. If we are not willing to correct errors that you have identified in your personal information, you may request that we take reasonable steps to attach a statement to the personal information noting the correction sought.</li>
+                    <li>We will only retain your personal information for as long as it is required to achieve the purposes set out in this Privacy Policy or as otherwise required by law.  </li>
+                    </ol>
+                  </div>
+                  <div class="col-12">
+                    <h5 class="ml-5">Security of information</h5>
+                    <ol start="17">
+                      <li>Although we take reasonable steps to ensure personal information in our possession is protected and held securely, we do not make any warranties in relation to the security of any information you disclose or transmit to us and we are not responsible for the theft, destruction, or inadvertent disclosure of your personal information where our security measures have been breached. Any transmission of personal information is conducted at your own risk.</li>
+                      <li>We generally hold your information in New Zealand.  However, certain personal information may be transferred and/or stored outside of New Zealand by our third party service providers, such as MailChimp and Google who host our data in their servers in the United States.  Where personal information is transferred outside of New Zealand we will ensure that such third party is subject to comparable privacy laws to New Zealand or is required to protect the personal information in a way that is comparable to New Zealand’s privacy laws. </li>
+                    </ol>
+
+                  </div>
+                  <div class="col-12">
+                    <h5 class="ml-5">Cookies</h5>
+                    <ol start="19">
+                      <li>Like many other websites on the internet, we use cookies to store and track information about you when you are on our website for the purposes of:
+                      <ol type="a">
+                        <li>providing more customised content and material to you on our website; and</li>
+                        <li>conducting business and marketing analysis.</li>
+                      </ol>
+                      </li>
+                      <li>All information collected via cookies will be held by us.  This information will not be made available to any third party in a manner that enables you to be identified. If you do not wish to allow cookies you may change your browser settings to disable cookies. However if you disable cookies some parts of the website may not function properly.  </li>
+                    </ol>
+                  </div>
+                  <div class="col-12">
+                    <h5 class="ml-5">Links to other sites</h5>
+                    <ol start="21">
+                      <li>Our website may have links or references to third party websites or material. Our Privacy Policy does not apply to those websites, and any information collected by such third parties is governed by that third party’s privacy practices or policies. We accept no responsibility or liability for the content or privacy practices of any third party websites. </li>
+                    </ol>
+                  </div>
+                  <div class="col-12">
+                    <h5>How to contact us</h5>
+                    <ol start="22">
+                      <li>If you have any queries or concerns about our Privacy Policy or our handling of your personal information please contact our Privacy Officer at Kiwrious Limited, Auckland Bioengineering Institute, Cloud 9, 70 Symonds Street, Auckland, New Zealand 1010 or by emailing us at  hello@kiwrious.com.</li>
+                      <li>If you have concerns that we have not met our obligations to you as required by the Privacy Act and the Information Privacy Principles of that Act, you may contact us and make a complaint at the address and/or email listed above. </li>
+                    <li>More information about your rights and our obligations in respect to privacy and information on making a privacy complaint are available from the Office of the Privacy Commissioner at www.privacy.org.nz or by emailing	investigations@privacy.org.nz.</li>
+                    </ol>
+                  </div>
+                </div>
+                <p>Last Updated: 28 September 2020</p>
+              </div>
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/jquery.movingboxes.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" ></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="js/main.js"></script>
+
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</body>
+
+</html>
